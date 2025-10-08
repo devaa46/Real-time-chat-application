@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth-container" class="auth-container">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <div class="buttons">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <div id="chat-container" class="chat-container" style="display:none;">
+    <h2>Chat Room</h2>
+    <div id="messages" class="messages"></div>
+    <div class="input-area">
+      <input type="text" id="msgInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
